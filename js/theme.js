@@ -44,7 +44,8 @@ export function applyTheme(theme, isAuto = false) {
 
 function startAutoTheme() {
     const themes = [
-        'dark', 'dark-2', 'purple', 'blue', 'ocean',
+        // 'dark', 
+        'dark-2', 'purple', 'blue', 'ocean',
         'sunset', 'rose', 'forest', 'midnight',
         'coral', 'mint', 'amber', 'nordic',
         'sakura', 'cyber', 'autumn'

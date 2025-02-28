@@ -26,6 +26,7 @@
     --forest-light: #95d5b2;
 }
 
+/* Temporarily disabled dark theme
 [data-theme="dark"] {
     --bg-color: #000000;
     --bg-color-rgb: 0, 0, 0;
@@ -35,6 +36,7 @@
     --accent-light: var(--dark-accent);
     --border-color: var(--dark-accent);
 }
+*/
 
 [data-theme="blue"] {
     --accent-color: var(--blue);
