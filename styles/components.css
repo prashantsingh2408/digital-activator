@@ -248,3 +248,37 @@ footer a:hover {
 .icon-primary {
     color: var(--text-color);
 }
+
+/* Carousel Styles */
+#carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+    width: fit-content; /* Allow track to be as wide as needed */
+}
+
+#carousel-track > * {
+    flex: 0 0 calc(33.333% - 1rem);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    min-width: calc(33.333% - 1rem); /* Ensure cards maintain width */
+}
+
+#carousel-track > *:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+    #carousel-track > * {
+        flex: 0 0 calc(50% - 1rem);
+        min-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 640px) {
+    #carousel-track > * {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+}

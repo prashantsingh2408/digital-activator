@@ -98,7 +98,7 @@
                         <i class="fas fa-bars text-2xl text-[var(--text-color)]"></i>
                     </button>
                 </div>
-
+             
                 <!-- Navigation Menu -->
                 <div class="hidden md:flex items-center space-x-4">
                    
@@ -409,7 +409,7 @@
         </div>
     </section>
 
-    <!-- After the About Section -->
+    <!-- Real-World Solutions Section -->
     <section id="use-cases" class="py-20 bg-[var(--bg-color-secondary)]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -419,170 +419,183 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Education Card -->
-                <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div class="p-6">
-                        <div class="text-[var(--accent-color)] text-3xl mb-4">
-                            <i class="fas fa-graduation-cap"></i>
+            <!-- Carousel Container -->
+            <div class="relative">
+                <!-- Carousel Track -->
+                <div id="carousel-track" class="flex transition-transform duration-300 gap-6">
+                    <!-- Education Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="text-[var(--accent-color)] text-3xl mb-4">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Educational Platforms</h3>
+                            <p class="text-[var(--text-color-secondary)] mb-4">
+                                Access complete courses offline with interactive features
+                            </p>
+                            <ul class="text-[var(--text-color-secondary)] space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Downloadable video lessons</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Offline progress tracking</span>
+                                </li>
+                            </ul>
                         </div>
-                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Educational Platforms</h3>
-                        <p class="text-[var(--text-color-secondary)] mb-4">
-                            Access complete courses offline with interactive features, perfect for continuous learning in remote areas.
-                        </p>
-                        <ul class="text-[var(--text-color-secondary)] space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Downloadable video lessons</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Offline progress tracking</span>
-                            </li>
-                        </ul>
+                    </div>
+
+                    <!-- Healthcare Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="text-[var(--accent-color)] text-3xl mb-4">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Health Information</h3>
+                            <p class="text-[var(--text-color-secondary)] mb-4">
+                                Access medical resources through SMS and low-bandwidth options
+                            </p>
+                            <ul class="text-[var(--text-color-secondary)] space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>SMS health consultations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Offline medical guides</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Agriculture Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="text-[var(--accent-color)] text-3xl mb-4">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Agricultural Advisory</h3>
+                            <p class="text-[var(--text-color-secondary)] mb-4">
+                                Receive farming tips and weather updates through SMS
+                            </p>
+                            <ul class="text-[var(--text-color-secondary)] space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Weather alerts via SMS</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Offline farming guides</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Financial Services Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="text-[var(--accent-color)] text-3xl mb-4">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Financial Services</h3>
+                            <p class="text-[var(--text-color-secondary)] mb-4">
+                                Manage money and make transactions through SMS commands
+                            </p>
+                            <ul class="text-[var(--text-color-secondary)] space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>SMS banking commands</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Offline transaction sync</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Response Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="text-[var(--accent-color)] text-3xl mb-4">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Emergency Response</h3>
+                            <p class="text-[var(--text-color-secondary)] mb-4">
+                                Access critical emergency information via SMS
+                            </p>
+                            <ul class="text-[var(--text-color-secondary)] space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Emergency SMS alerts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Offline safety guides</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Language Learning Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="text-[var(--accent-color)] text-3xl mb-4">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Language Learning</h3>
+                            <p class="text-[var(--text-color-secondary)] mb-4">
+                                Learn new languages with offline courses
+                            </p>
+                            <ul class="text-[var(--text-color-secondary)] space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Offline audio lessons</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Interactive exercises</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job Search Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="text-[var(--accent-color)] text-3xl mb-4">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Job Search Platform</h3>
+                            <p class="text-[var(--text-color-secondary)] mb-4">
+                                Find and apply for local job opportunities through SMS
+                            </p>
+                            <ul class="text-[var(--text-color-secondary)] space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>SMS job alerts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
+                                    <span>Offline job listings</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Healthcare Card -->
-                <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div class="p-6">
-                        <div class="text-[var(--accent-color)] text-3xl mb-4">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Health Information</h3>
-                        <p class="text-[var(--text-color-secondary)] mb-4">
-                            Access medical resources and connect with healthcare providers through SMS and low-bandwidth options.
-                        </p>
-                        <ul class="text-[var(--text-color-secondary)] space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>SMS health consultations</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Offline medical guides</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- Navigation Buttons -->
+                <button onclick="moveCarousel('prev')" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 bg-[var(--accent-color)] text-[var(--bg-color)] rounded-full p-3 shadow-lg hover:bg-[var(--accent-dark)] transition-colors duration-300">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button onclick="moveCarousel('next')" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 bg-[var(--accent-color)] text-[var(--bg-color)] rounded-full p-3 shadow-lg hover:bg-[var(--accent-dark)] transition-colors duration-300">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
 
-                <!-- Agriculture Card -->
-                <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div class="p-6">
-                        <div class="text-[var(--accent-color)] text-3xl mb-4">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Agricultural Advisory</h3>
-                        <p class="text-[var(--text-color-secondary)] mb-4">
-                            Receive farming tips, weather updates, and market prices through SMS and downloadable guides.
-                        </p>
-                        <ul class="text-[var(--text-color-secondary)] space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Weather alerts via SMS</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Offline farming guides</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Financial Services Card -->
-                <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div class="p-6">
-                        <div class="text-[var(--accent-color)] text-3xl mb-4">
-                            <i class="fas fa-wallet"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Financial Services</h3>
-                        <p class="text-[var(--text-color-secondary)] mb-4">
-                            Manage money and make transactions through SMS commands, promoting financial inclusion.
-                        </p>
-                        <ul class="text-[var(--text-color-secondary)] space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>SMS banking commands</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Offline transaction sync</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Emergency Response Card -->
-                <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div class="p-6">
-                        <div class="text-[var(--accent-color)] text-3xl mb-4">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Emergency Response</h3>
-                        <p class="text-[var(--text-color-secondary)] mb-4">
-                            Access critical emergency information and receive alerts through SMS during disasters.
-                        </p>
-                        <ul class="text-[var(--text-color-secondary)] space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Emergency SMS alerts</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Offline safety guides</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Language Learning Card -->
-                <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div class="p-6">
-                        <div class="text-[var(--accent-color)] text-3xl mb-4">
-                            <i class="fas fa-language"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Language Learning</h3>
-                        <p class="text-[var(--text-color-secondary)] mb-4">
-                            Learn new languages with offline courses featuring audio lessons and interactive exercises.
-                        </p>
-                        <ul class="text-[var(--text-color-secondary)] space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Offline audio lessons</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Interactive exercises</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Job Search Card -->
-                <div class="bg-[var(--card-bg)] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div class="p-6">
-                        <div class="text-[var(--accent-color)] text-3xl mb-4">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">Job Search Platform</h3>
-                        <p class="text-[var(--text-color-secondary)] mb-4">
-                            Find and apply for local job opportunities through SMS, with offline access to listings and simple application processes.
-                        </p>
-                        <ul class="text-[var(--text-color-secondary)] space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>SMS job alerts and applications</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Offline job listings cache</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-[var(--accent-color)] mt-1 mr-2"></i>
-                                <span>Local opportunity matching</span>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Dots Navigation -->
+                <div class="flex justify-center mt-8 gap-2" id="carousel-dots">
+                    <!-- Dots will be added dynamically -->
                 </div>
             </div>
         </div>
@@ -683,69 +696,72 @@
             <div class="mt-16">
                 <h3 class="text-xl font-semibold text-[var(--text-color)] mb-6 text-center">Powered by Global Data Sources</h3>
                 
-                <!-- Network Design & Strategic Planning -->
-                <div class="mb-8">
-                    <h4 class="text-lg font-semibold text-[var(--accent-color)] mb-4">Network Design & Strategic Planning</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <a href="https://maps.giga.global/docs/explore-api" target="_blank" 
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-school mr-3 text-lg"></i>
-                            <span class="font-medium">Giga School Data</span>
-                        </a>
-                        <a href="https://opencellid.org/downloads.php" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-broadcast-tower mr-3 text-lg"></i>
-                            <span class="font-medium">OpenCellID</span>
-                        </a>
-                        <a href="https://www.africabandwidthmaps.com/" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-map mr-3 text-lg"></i>
-                            <span class="font-medium">Africa Bandwidth Maps</span>
-                        </a>
+                <!-- Data Sources Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Network Design Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg p-6">
+                        <h4 class="text-lg font-semibold text-[var(--accent-color)] mb-4">Network Design & Strategic Planning</h4>
+                        <div class="space-y-4">
+                            <a href="https://maps.giga.global/docs/explore-api" target="_blank" 
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-school mr-3 text-lg"></i>
+                                <span class="font-medium">Giga School Data</span>
+                            </a>
+                            <a href="https://opencellid.org/downloads.php" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-broadcast-tower mr-3 text-lg"></i>
+                                <span class="font-medium">OpenCellID</span>
+                            </a>
+                            <a href="https://www.africabandwidthmaps.com/" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-map mr-3 text-lg"></i>
+                                <span class="font-medium">Africa Bandwidth Maps</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Resource Optimization -->
-                <div class="mb-8">
-                    <h4 class="text-lg font-semibold text-[var(--accent-color)] mb-4">Resource Optimization</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <a href="https://registry.opendata.aws/speedtest-global-performance/" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-tachometer-alt mr-3 text-lg"></i>
-                            <span class="font-medium">Ookla Speedtest</span>
-                        </a>
-                        <a href="https://api.ioda.inetintel.cc.gatech.edu/v2/" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-chart-line mr-3 text-lg"></i>
-                            <span class="font-medium">IODA</span>
-                        </a>
-                        <a href="https://huggingface.co/datasets/infinite-dataset-hub/5GNetworkOptimization" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-network-wired mr-3 text-lg"></i>
-                            <span class="font-medium">5G Network Optimization</span>
-                        </a>
+                    <!-- Resource Optimization Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg p-6">
+                        <h4 class="text-lg font-semibold text-[var(--accent-color)] mb-4">Resource Optimization</h4>
+                        <div class="space-y-4">
+                            <a href="https://registry.opendata.aws/speedtest-global-performance/" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-tachometer-alt mr-3 text-lg"></i>
+                                <span class="font-medium">Ookla Speedtest</span>
+                            </a>
+                            <a href="https://api.ioda.inetintel.cc.gatech.edu/v2/" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-chart-line mr-3 text-lg"></i>
+                                <span class="font-medium">IODA</span>
+                            </a>
+                            <a href="https://huggingface.co/datasets/infinite-dataset-hub/5GNetworkOptimization" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-network-wired mr-3 text-lg"></i>
+                                <span class="font-medium">5G Network Optimization</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Infrastructure & Tools -->
-                <div class="mb-8">
-                    <h4 class="text-lg font-semibold text-[var(--accent-color)] mb-4">Infrastructure & Tools</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <a href="https://www.cloudinfrastructuremap.com/#/" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-cloud mr-3 text-lg"></i>
-                            <span class="font-medium">Cloud Infrastructure Map</span>
-                        </a>
-                        <a href="https://github.com/microsoft/GlobalMLBuildingFootprints" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-building mr-3 text-lg"></i>
-                            <span class="font-medium">Global Building Footprints</span>
-                        </a>
-                        <a href="https://github.com/magma/magma" target="_blank"
-                           class="px-6 py-4 bg-[var(--card-bg)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 hover:shadow-lg flex items-center">
-                            <i class="fas fa-code-branch mr-3 text-lg"></i>
-                            <span class="font-medium">Magma Platform</span>
-                        </a>
+                    <!-- Infrastructure & Tools Card -->
+                    <div class="bg-[var(--card-bg)] rounded-lg shadow-lg p-6">
+                        <h4 class="text-lg font-semibold text-[var(--accent-color)] mb-4">Infrastructure & Tools</h4>
+                        <div class="space-y-4">
+                            <a href="https://www.cloudinfrastructuremap.com/#/" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-cloud mr-3 text-lg"></i>
+                                <span class="font-medium">Cloud Infrastructure Map</span>
+                            </a>
+                            <a href="https://github.com/microsoft/GlobalMLBuildingFootprints" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-building mr-3 text-lg"></i>
+                                <span class="font-medium">Global Building Footprints</span>
+                            </a>
+                            <a href="https://github.com/magma/magma" target="_blank"
+                               class="block p-4 bg-[var(--bg-color)] rounded-lg text-[var(--text-color)] hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all duration-300 flex items-center">
+                                <i class="fas fa-code-branch mr-3 text-lg"></i>
+                                <span class="font-medium">Magma Platform</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -765,18 +781,16 @@
         </div>
     </section>
 
-
-
     <!-- Footer -->
     <footer class="bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="space-y-4">
                     <a href="https://hackathons-circle.vercel.app/" target="_blank">
-                        <div class="flex items-center space-x-2">
-                            <i class="fas fa-code text-[var(--accent-light)] text-2xl"></i>
-                            <span class="font-bold text-xl text-white">Hackathon Circle</span>
-                        </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-code text-[var(--accent-light)] text-2xl"></i>
+                        <span class="font-bold text-xl text-white">Hackathon Circle</span>
+                    </div>
                     </a>
                     <p class="text-gray-400">Building the future together through innovation and collaboration.</p>
                 </div>
@@ -784,7 +798,7 @@
                     <h3 class="font-semibold text-lg mb-4 text-white">Quick Links</h3>
                     <ul class="space-y-2">
 
-                        
+                      
                     </ul>
                 </div>
                 <div>
@@ -828,5 +842,7 @@
 
     <!-- Add the new animation script -->
     <script src="js/digital-activator-animation.js"></script>
+    <!-- Add this before closing body tag -->
+    <script src="js/carousel.js"></script>
 </body>
 </html>
