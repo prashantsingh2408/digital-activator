@@ -1,0 +1,74 @@
+/* Carousel Navigation Styles */
+.carousel-navigation .next-button,
+.next-button {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    /* Ensure the button is fully visible */
+    transform: translateX(0);
+    /* Add padding to make it easier to tap on mobile */
+    padding: 15px;
+}
+
+.carousel-navigation .prev-button,
+.prev-button {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    /* Ensure the button is fully visible */
+    transform: translateX(0);
+    /* Add padding to make it easier to tap on mobile */
+    padding: 15px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .carousel-navigation .next-button,
+    .next-button {
+        /* Adjust position to ensure visibility */
+        right: 5px;
+        /* Slightly reduce the button size if needed */
+        transform: scale(0.9);
+    }
+    
+    .carousel-navigation .prev-button,
+    .prev-button {
+        /* Adjust position to ensure visibility */
+        left: 5px;
+        /* Slightly reduce the button size if needed */
+        transform: scale(0.9);
+    }
+}
+
+/* Carousel Dots Styles */
+.carousel-dot {
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot:hover {
+    background-color: var(--accent-light) !important;
+}
+
+/* Add these styles for the carousel track */
+#carousel-track {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Ensure full visibility of slides on small screens */
+    .carousel-container {
+        padding: 0 5px;
+    }
+    
+    /* Make slides more compact on mobile */
+    #carousel-track > div {
+        width: calc(100% - 10px);
+    }
+} 
